@@ -1,14 +1,14 @@
 package lame
 
 import (
-	"testing"
+	"github.com/tectiv3/go-lame/compare"
 	"os"
-	"./compare"
+	"testing"
 )
 
 func Test_ReadWavHeader(t *testing.T) {
 	tests := []struct {
-		fn string
+		fn  string
 		hdr WavHeader
 	}{
 		{
@@ -60,4 +60,3 @@ func Test_LameStruct(t *testing.T) {
 	t.Logf("%#v", l.lgs)
 	t.Logf("%#v", err)
 }
-
